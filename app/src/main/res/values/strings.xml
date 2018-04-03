@@ -13,9 +13,33 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
     <string name="application_name">Personal Trainer Customer Management Application</string>
     <string name="login_success">Login Successful</string>
     <string name="login_failure">Login Failure</string>
     <string name="user_name">jdoe</string>
+    <string name="user_email">jdoe@gmail.com</string>
     <string name="user_password">welcome1</string>
+
+    <string name="customerSearch">Search Customers</string>
+    <string name="addCustomer">Add Customer</string>
+
+    <string name="user_message">Logged in as:</string>
+
+    <string name="edit_session_title">Session Name</string>
+    <string name="edit_session">Edit Session</string>
+    <string name="edit_session_types">Session Type</string>
+    <string name="edit_customer_title">Edit Customer</string>
+
+    <string name="edit_customer_name">Name</string>
+    <string name="edit_customer_email">Email</string>
+    <string name="edit_customer_phone">Phone</string>
+    <string name="edit_customer_address">Address</string>
+
+    <string name="billing_information_title">Billing Information</string>
+    <string name="billing_information_name">Name</string>
+    <string name="billing_information_email">Email</string>
+    <string name="billing_information_phone">Phone</string>
+    <string name="billing_information_address">Address</string>
+
 </resources>
