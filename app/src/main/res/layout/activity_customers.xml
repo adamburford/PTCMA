@@ -13,10 +13,15 @@
 
         <fragment
             android:name="com.example.adam.ptcma.current_user"
+            android:id="@+id/userNameFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_current_user"/>
 
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/addCustomer" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,13 +31,7 @@
         <ListView
             android:id="@+id/customer_list"
             android:layout_width="match_parent"
-            android:layout_height="412dp" />
-
-        <Button
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="@string/addCustomer" />
-
+            android:layout_height="fill_parent" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
