@@ -42,4 +42,6 @@
     <string name="billing_information_phone">Phone</string>
     <string name="billing_information_address">Address</string>
 
+    <string name="empty_list_text">No records found</string>
+
 </resources>
