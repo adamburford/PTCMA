@@ -58,5 +58,8 @@
         android:maxLines="2"
         android:padding="3dp"
         android:visibility="visible" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
 </RelativeLayout>
