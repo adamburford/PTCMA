@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.database.Cursor;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -34,6 +36,14 @@ public class Customers extends AppCompatActivity {
 			@Override
 			public void onClick(View view) {
 				addCustomer();
+			}
+		});
+
+		Button viewCustomersButton = findViewById(R.id.viewAppointments);
+		viewCustomersButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				onViewAppointmentsButtonClicked();
 			}
 		});
 
@@ -78,5 +88,23 @@ public class Customers extends AppCompatActivity {
 
 		Intent intent = new Intent(this, com.example.adam.ptcma.EditCustomerActivity.class);
 		startActivity(intent);
+	}
+
+	void onViewAppointmentsButtonClicked() {
+		Intent intent = new Intent(this, com.example.adam.ptcma.Appointments.class);
+		startActivity(intent);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.logoff, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		Intent intent = new Intent(this, LoginActivity.class);
+		startActivity(intent);
+		return true;
 	}
 }

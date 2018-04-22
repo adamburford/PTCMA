@@ -41,6 +41,10 @@
     <string name="billing_information_email">Email</string>
     <string name="billing_information_phone">Phone</string>
     <string name="billing_information_address">Address</string>
+    <string name="addAppointment">Add Appointment</string>
+    <string name="appointmentSearch">Search Appointments</string>
+    <string name="viewCustomersButton">View Customers</string>
+    <string name="viewAppointmentsButton">View Appointments</string>
 
     <string name="empty_list_text">No records found</string>
 

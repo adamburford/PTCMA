@@ -10,12 +10,28 @@
         android:layout_height="match_parent">
 
 
-        <fragment
-            android:name="com.example.adam.ptcma.current_user"
-            android:id="@+id/userNameFragment"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_current_user"/>
+            android:orientation="horizontal">
+
+            <fragment
+                class="com.example.adam.ptcma.current_user"
+                android:id="@+id/userNameFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_current_user"/>
+
+            <Button
+                android:id="@+id/viewAppointments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/userNameFragment"
+                android:drawableRight="@android:drawable/ic_media_play"
+                android:text="@string/viewAppointmentsButton" />
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/addCustomerButton"

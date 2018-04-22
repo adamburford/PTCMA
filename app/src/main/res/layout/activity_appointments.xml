@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adam.ptcma.Appointments">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <fragment
+                    class="com.example.adam.ptcma.current_user"
+                    android:id="@+id/userNameFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_current_user"/>
+
+                <Button
+                    android:id="@+id/viewCustomers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/userNameFragment"
+                    android:drawableRight="@android:drawable/ic_media_play"
+                    android:text="@string/viewCustomersButton" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/addAppointmentButton"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/addAppointment" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/appointmentSearch"
+                />
+
+            <ListView
+                android:id="@+id/customer_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
