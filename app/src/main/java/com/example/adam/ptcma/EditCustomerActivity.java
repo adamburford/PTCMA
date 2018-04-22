@@ -65,8 +65,9 @@ public class EditCustomerActivity extends AppCompatActivity implements View.OnCl
 				final String phone = customerPhone.getText().toString();
 				final String email = customerEmail.getText().toString();
 				final String address = customerAddress.getText().toString();
+				final String picture = mCurrentPhotoPath;
 
-				dbManager.insert(name, phone, email, address);
+				dbManager.insert(name, phone, email, address, picture);
 
 				Intent intent = new Intent(this, Customers.class);
 				startActivity(intent);

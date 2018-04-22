@@ -20,9 +20,9 @@ public class Customers extends AppCompatActivity {
 	private android.support.v4.widget.SimpleCursorAdapter adapter;
 
 	final String[] from = new String[] { DatabaseHelper._ID,
-			DatabaseHelper.NAME, DatabaseHelper.PHONE, DatabaseHelper.EMAIL, DatabaseHelper.ADDRESS };
+			DatabaseHelper.NAME, DatabaseHelper.PHONE, DatabaseHelper.EMAIL, DatabaseHelper.ADDRESS, DatabaseHelper.PICTURE };
 
-	final int[] to = new int[] { R.id.id, R.id.customer_name, R.id.customer_phone, R.id.customer_email, R.id.customer_address };
+	final int[] to = new int[] { R.id.id, R.id.customer_name, R.id.customer_phone, R.id.customer_email, R.id.customer_address, R.id.customer_picture };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
