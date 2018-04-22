@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class Customers extends AppCompatActivity {
 
@@ -103,6 +104,7 @@ public class Customers extends AppCompatActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		Toast.makeText(getApplicationContext(), "Logging you off", Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(this, LoginActivity.class);
 		startActivity(intent);
 		return true;

@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Appointments extends AppCompatActivity {
 
@@ -40,6 +41,7 @@ public class Appointments extends AppCompatActivity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		Toast.makeText(getApplicationContext(), "Logging you off", Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(this, LoginActivity.class);
 		startActivity(intent);
 		return true;
